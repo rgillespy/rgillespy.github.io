@@ -1,10 +1,14 @@
 :root {
-    --background: #181818;
-    --surface: #1d1d1d;
+    --background: #1b1d1b;
+    --surface: #161816;
     --text: #f2f0e9;
     --muted: #b9bbb6;
     --border: #383b38;
     --accent: #a8c7c1;
+
+    /* Typography */
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: "Calibri", Arial, sans-serif;
 }
 
 
@@ -18,9 +22,11 @@
 
 body {
     margin: 0;
+
     background: var(--background);
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: var(--body-font);
 }
 
 a {
@@ -45,19 +51,23 @@ header {
 .site-title {
     color: inherit;
     text-decoration: none;
+
+    font-family: var(--body-font);
     font-weight: 700;
     letter-spacing: 0.08em;
 }
 
 nav {
-    font: "Calibri", Georgia , sans-serif;
     display: flex;
     gap: 28px;
+
+    font-family: var(--body-font);
 }
 
 nav a {
     color: inherit;
     text-decoration: none;
+
     font-size: 0.9rem;
 }
 
@@ -75,15 +85,26 @@ nav a:hover {
 
     color: var(--accent);
 
+    font-family: var(--body-font);
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.15em;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+}
+
+
+/* Main page titles */
+
 h1 {
     margin: 0;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--heading-font);
     font-size: clamp(2.8rem, 6vw, 5.5rem);
     font-weight: 400;
     line-height: 0.95;
@@ -111,6 +132,7 @@ h1 {
 
     color: var(--muted);
 
+    font-family: var(--body-font);
     font-size: 1.2rem;
     line-height: 1.7;
 }
@@ -133,7 +155,7 @@ h1 {
 .essay-link h2 {
     margin: 0;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--heading-font);
     font-size: clamp(2rem, 4vw, 4rem);
     font-weight: 400;
 }
@@ -143,6 +165,7 @@ h1 {
 
     color: var(--muted);
 
+    font-family: var(--body-font);
     font-size: 1.05rem;
     line-height: 1.6;
 }
@@ -153,6 +176,7 @@ h1 {
 
     color: var(--accent);
 
+    font-family: var(--body-font);
     font-size: 0.85rem;
 }
 
@@ -177,7 +201,9 @@ h1 {
 }
 
 .essay-header h1 {
+    font-family: var(--heading-font);
     font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 400;
 }
 
 .dek {
@@ -185,9 +211,9 @@ h1 {
 
     color: var(--muted);
 
+    font-family: var(--body-font);
     font-size: 1.25rem;
     line-height: 1.6;
-    font: "Calibri", Georgia , sans-serif;
 }
 
 .essay-body {
@@ -198,21 +224,44 @@ h1 {
 .essay-body p {
     margin: 0 0 1.6em;
 
-    font-family: "Calibri", Georgia , sans-serif;
-    font-size: 1.2rem;
+    color: var(--text);
+
+    font-family: var(--body-font);
+    font-size: 1.15rem;
     line-height: 1.8;
 }
 
+
+/* Section breaks */
+
 .essay-body hr {
-    width: 40%;
+    width: 55%;
     margin: 6rem auto;
+
     border: 0;
     border-top: 1px solid var(--border);
 }
 
+
+/* Emphasis */
+
 .emphasis {
+    font-family: var(--body-font);
     font-style: italic;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+
+/* Essay section headings */
+
+.essay-body h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.1;
 }
 
 
@@ -233,6 +282,8 @@ h1 {
 
 .articles-intro h1 {
     margin-bottom: 30px;
+
+    font-family: var(--heading-font);
 }
 
 .articles-intro > p:last-child {
@@ -240,12 +291,15 @@ h1 {
 
     color: var(--muted);
 
+    font-family: var(--body-font);
     font-size: 1.2rem;
     line-height: 1.7;
 }
 
 
-/* Article grid */
+/* =========================
+   ARTICLE GRID
+   ========================= */
 
 .article-grid {
     display: grid;
@@ -284,6 +338,7 @@ h1 {
 
     color: var(--accent);
 
+    font-family: var(--body-font);
     font-size: 0.75rem;
     letter-spacing: 0.15em;
 }
@@ -291,7 +346,7 @@ h1 {
 .article-card h2 {
     margin: 0 0 20px;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--heading-font);
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.05;
@@ -302,6 +357,7 @@ h1 {
 
     color: var(--muted);
 
+    font-family: var(--body-font);
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -312,6 +368,7 @@ h1 {
 
     color: var(--accent);
 
+    font-family: var(--body-font);
     font-size: 0.85rem;
 }
 
