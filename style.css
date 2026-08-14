@@ -1,6 +1,6 @@
 :root {
-    --background: #151716;
-    --surface: #1d201e;
+    --background: #181818;
+    --surface: #1d1d1d;
     --text: #f2f0e9;
     --muted: #b9bbb6;
     --border: #383b38;
@@ -50,6 +50,7 @@ header {
 }
 
 nav {
+    font: "Calibri", Georgia , sans-serif;
     display: flex;
     gap: 28px;
 }
@@ -186,6 +187,7 @@ h1 {
 
     font-size: 1.25rem;
     line-height: 1.6;
+    font: "Calibri", Georgia , sans-serif;
 }
 
 .essay-body {
@@ -201,8 +203,16 @@ h1 {
     line-height: 1.8;
 }
 
+.essay-body hr {
+    width: 40%;
+    margin: 6rem auto;
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
 .emphasis {
-    font: italic bold;
+    font-style: italic;
+    font-weight: bold;
 }
 
 
