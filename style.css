@@ -196,9 +196,13 @@ h1 {
 .essay-body p {
     margin: 0 0 1.6em;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Calibri", Georgia , sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
+}
+
+.emphasis {
+    font: italic bold;
 }
 
 
