@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
 :root {
     --background: #0e0f0e;
     --surface: #161816;
@@ -7,8 +8,8 @@
     --accent: #a8c7c1;
 
     /* Typography */
-    --heading-font: Georgia, "Times New Roman", serif;
-    --body-font: "Calibri", Arial, sans-serif;
+    --heading-font: "Source Serif 4", Georgia, serif;
+    --body-font: "Inter", Arial, sans-serif;
 }
 
 
